@@ -1,0 +1,42 @@
+public class PlayerController : MonoBehaviour {
+
+Vector3 targetPosition;
+
+public float speed = 2f;
+
+void Update ()
+
+{
+
+transform.Translate(0, 0, speed * Time.deltaTime);
+
+if(Input.GetMouseButtonDown(0))
+
+{
+
+SetTargetPosition();
+
+}
+
+}
+
+void SetTargetPosition()
+
+{
+
+Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+RaycastHit hit;
+
+if(Physics.Raycast(ray, out hit, 1000))
+
+{
+
+targetPosition = hit.point;
+
+transform.LookAt(targetPosition);
+
+}
+
+}
+
