@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//assign the dummy assest in the unity test scene
+
 public class BugMovement : MonoBehaviour
 {
     public GameObject bugPrefab;
