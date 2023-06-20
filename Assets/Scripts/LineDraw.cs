@@ -5,12 +5,15 @@ using UnityEngine;
 public class LineDraw : MonoBehaviour
 {
     private LineRenderer lineRenderer;
-    private Vector2 touchPosition;
+    private List<Vector3> linePositions;
 
     void Start()
     {
         lineRenderer = GetComponent<LineRenderer>();
         //lineRenderer.transform.position = new Vector3[] { new Vector3(0, 0, 0) };
+        linePositions = new List<Vector3>();
+
+
     }
 
     void Update()
@@ -23,8 +26,30 @@ public class LineDraw : MonoBehaviour
         {
             lineRenderer.transform.position.Add(touchPosition);
         }*/
+
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+
+            if (touch.phase == TouchPhase.Began)
+            {
+                linePositions.Clear();
+                lineRenderer.positionCount = 0;
+            }
+            else if (touch.phase == TouchPhase.Moved || touch.phase == TouchPhase.Stationary)
+            {
+                Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
+                touchPosition.z = 0f;
+
+                linePositions.Add(touchPosition);
+                lineRenderer.positionCount = linePositions.Count;
+                lineRenderer.SetPositions(linePositions.ToArray());
+                Debug.Log("touch should work");
+            }
+        }
     }
 
 
 
 }
+
