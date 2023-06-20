@@ -10,7 +10,6 @@ public class LineDraw : MonoBehaviour
     void Start()
     {
         lineRenderer = GetComponent<LineRenderer>();
-        //lineRenderer.transform.position = new Vector3[] { new Vector3(0, 0, 0) };
         linePositions = new List<Vector3>();
 
 
@@ -18,15 +17,7 @@ public class LineDraw : MonoBehaviour
 
     void Update()
     {
-        /*if (Input.GetTouch(0).phase == TouchPhase.Began)
-        {
-            touchPosition = Input.GetTouch(0).position;
-        }
-        else if (Input.GetTouch(0).phase == TouchPhase.Moved)
-        {
-            lineRenderer.transform.position.Add(touchPosition);
-        }*/
-
+      
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
