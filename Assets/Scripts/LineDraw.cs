@@ -6,13 +6,14 @@ public class LineDraw : MonoBehaviour
 {
     private LineRenderer lineRenderer;
     private List<Vector3> linePositions;
+    EdgeCollider2D edgeCollider = new EdgeCollider2D();
+
 
     void Start()
     {
         lineRenderer = GetComponent<LineRenderer>();
         linePositions = new List<Vector3>();
-
-
+        
     }
 
     void Update()
