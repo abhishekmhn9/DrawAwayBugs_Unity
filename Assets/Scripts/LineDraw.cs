@@ -6,7 +6,7 @@ public class LineDraw : MonoBehaviour
 {
     private LineRenderer lineRenderer;
     private List<Vector3> linePositions;
-    EdgeCollider2D edgeCollider = new EdgeCollider2D();
+    // EdgeCollider2D edgeCollider = new EdgeCollider2D();
 
 
     void Start()
@@ -36,7 +36,8 @@ public class LineDraw : MonoBehaviour
                 linePositions.Add(touchPosition);
                 lineRenderer.positionCount = linePositions.Count;
                 lineRenderer.SetPositions(linePositions.ToArray());
-                Debug.Log("touch should work");
+            
+                Debug.Log("Code is working");
             }
         }
     }
