@@ -6,7 +6,7 @@ public class LineDraw : MonoBehaviour
 {
     private LineRenderer lineRenderer;
     private List<Vector3> linePositions;
-    // EdgeCollider2D edgeCollider = new EdgeCollider2D();
+    EdgeCollider2D edge;
 
 
     void Start()
@@ -38,10 +38,32 @@ public class LineDraw : MonoBehaviour
                 lineRenderer.SetPositions(linePositions.ToArray());
             
                 Debug.Log("Code is working");
+
+                addCollider();
             }
         }
     }
 
+    void addCollider()
+    {
+        List<Vector2> colliderPoints = new List<Vector2>();
+        for (int i = 0; i < colliderPoints.Count; i++)
+        {
+
+            colliderPoints.Add(new Vector3(colliderPoints[i].x, colliderPoints[i].y, 0f));
+
+        }
+
+        for (int i = colliderPoints.Count - 1; i > 0; i--)
+        {
+            colliderPoints.Add(new Vector3(colliderPoints[i].x, colliderPoints[i].y, 0f));
+        }
+
+        edge = lineRenderer.gameObject.AddComponent<EdgeCollider2D>();
+        edge.points = colliderPoints.ToArray();
+
+
+    }
 
 
 }
