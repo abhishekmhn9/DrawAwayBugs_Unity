@@ -114,5 +114,7 @@ public class BugMovement : MonoBehaviour
 
 // collider for bug 
 
+void addcollider;
+
 Bugs.AddComponent<BoxCollider>();
 
