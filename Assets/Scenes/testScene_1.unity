@@ -123,7 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< Updated upstream
 --- !u!1 &217735884
+=======
+--- !u!1 &167802169
+>>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,8 +135,13 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< Updated upstream
   - component: {fileID: 217735886}
   - component: {fileID: 217735885}
+=======
+  - component: {fileID: 167802170}
+  - component: {fileID: 167802171}
+>>>>>>> Stashed changes
   m_Layer: 0
   m_Name: Lvl1
   m_TagString: Untagged
@@ -140,13 +149,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< Updated upstream
 --- !u!212 &217735885
+=======
+--- !u!4 &167802170
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167802169}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.07, y: 0, z: 0}
+  m_LocalScale: {x: 0.5263657, y: 0.5263657, z: 0.5263657}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1178143530}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &167802171
+>>>>>>> Stashed changes
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 217735884}
+=======
+  m_GameObject: {fileID: 167802169}
+>>>>>>> Stashed changes
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -182,9 +214,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.8962264, g: 0.8835149, b: 0.69894385, a: 1}
 =======
+=======
+>>>>>>> Stashed changes
   m_Sprite: {fileID: 21300000, guid: acf097292aa32284482498fdf321ecf6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 >>>>>>> Stashed changes
@@ -197,6 +232,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< Updated upstream
 --- !u!4 &217735886
 Transform:
   m_ObjectHideFlags: 0
@@ -212,6 +248,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> Stashed changes
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,7 +489,11 @@ PrefabInstance:
     - target: {fileID: 4329160086378589736, guid: 30f0041571e73fb428839ac7e211246d, type: 3}
       propertyPath: m_RootOrder
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       value: 5
+=======
+      value: 4
+>>>>>>> Stashed changes
 =======
       value: 4
 >>>>>>> Stashed changes
@@ -550,7 +592,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4329160086378589737, guid: 30f0041571e73fb428839ac7e211246d, type: 3}
       propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].value
+<<<<<<< Updated upstream
       value: 0.8375015
+=======
+      value: 0.82499695
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 4329160086378589737, guid: 30f0041571e73fb428839ac7e211246d, type: 3}
       propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].value
@@ -558,7 +604,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4329160086378589737, guid: 30f0041571e73fb428839ac7e211246d, type: 3}
       propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[2].value
+<<<<<<< Updated upstream
       value: 0.82499695
+=======
+      value: 0.9000015
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 4329160086378589739, guid: 30f0041571e73fb428839ac7e211246d, type: 3}
       propertyPath: m_Name
@@ -567,6 +617,41 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30f0041571e73fb428839ac7e211246d, type: 3}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+--- !u!1 &1178143529
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1178143530}
+  m_Layer: 0
+  m_Name: Level
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1178143530
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178143529}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 167802170}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> Stashed changes
 --- !u!1 &1647286261
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,8 +768,11 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -9.681, y: 0, z: 0}
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 --- !u!1001 &6616019062538806972
@@ -697,7 +785,11 @@ PrefabInstance:
     - target: {fileID: 6616019061937790233, guid: ad38453a484eb4d42af58cc39fcae467, type: 3}
       propertyPath: m_RootOrder
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       value: 4
+=======
+      value: 3
+>>>>>>> Stashed changes
 =======
       value: 3
 >>>>>>> Stashed changes
@@ -709,9 +801,13 @@ PrefabInstance:
     - target: {fileID: 6616019061937790233, guid: ad38453a484eb4d42af58cc39fcae467, type: 3}
       propertyPath: m_LocalPosition.y
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       value: 4.29
 =======
       value: 3.11
+>>>>>>> Stashed changes
+=======
+      value: 3.55
 >>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 6616019061937790233, guid: ad38453a484eb4d42af58cc39fcae467, type: 3}
