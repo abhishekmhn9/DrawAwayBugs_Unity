@@ -30,13 +30,14 @@ public class LineDraw : MonoBehaviour
             if (touch.phase == TouchPhase.Began)
             {
                 linePositions.Clear();
+                
                 lineRenderer.positionCount = 0;
-                Destroy(lineRenderer);
+                
             }
             else if (touch.phase == TouchPhase.Moved || touch.phase == TouchPhase.Stationary)
             {
-                Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
-                //touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
+                //Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
+                touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
                 touchPosition.z = 0f;
 
                 linePositions.Add(touchPosition);
@@ -44,9 +45,8 @@ public class LineDraw : MonoBehaviour
                 lineRenderer.SetPositions(linePositions.ToArray());
                 colliderPoints.Add(touchPosition);
                 addCollider();
-                Debug.Log("Code is working");
             }
-        }
+        }   
     }
 
     void addCollider()
@@ -56,7 +56,7 @@ public class LineDraw : MonoBehaviour
         {
 
             colliderPoints2.Add(new Vector3(colliderPoints[i].x, colliderPoints[i].y, 0f));
-
+            
         }
 
         for (int i = colliderPoints.Count - 1; i > 0; i--)
