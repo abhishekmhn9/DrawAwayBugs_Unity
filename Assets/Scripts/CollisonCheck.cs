@@ -10,18 +10,19 @@ public class CollisonCheck : MonoBehaviour
     public TextMeshProUGUI scoreText;
     private int score = 0;
 
-    void AddScore()
+    void AddScore() 
     {
         score++;
         scoreText.text = "SCORE: " + score;
+        Debug.Log("TEST TEST TESTING");
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D edge)
     {
-        if(collision.tag == "Bug")
+        if(edge.tag == "Bug")
         {
             AddScore();
-            collision.gameObject.SetActive(false);
+            edge.gameObject.SetActive(false);
         }
     }    
 }

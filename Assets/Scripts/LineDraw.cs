@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class LineDraw : MonoBehaviour
 {
@@ -11,7 +13,6 @@ public class LineDraw : MonoBehaviour
     EdgeCollider2D edge;
     Vector3 touchPosition;
     List<Vector3> colliderPoints = new List<Vector3>();
-
 
     void Start()
     {
@@ -66,9 +67,17 @@ public class LineDraw : MonoBehaviour
 
         edge = lineRenderer.gameObject.AddComponent<EdgeCollider2D>();
         edge.points = colliderPoints2.ToArray();
-
-
+        //CollisonCheck cCheck = new CollisonCheck();
     }
+
+
+    /*void OnTriggerEnter2D(Collider2D edge)
+    {
+        if (edge.tag == "Bug")
+        {
+           edge.gameObject.SetActive(false);
+        }
+    }*/
 
 }
 
