@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< Updated upstream
   tags: []
+=======
+  tags:
+  - Bug
+  - Target
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
@@ -43,4 +49,7 @@ TagManager:
     locked: 0
   - name: Plane_BG
     uniqueID: 1233946411
+    locked: 0
+  - name: Pause
+    uniqueID: 3494687157
     locked: 0

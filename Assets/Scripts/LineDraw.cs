@@ -1,5 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+<<<<<<< Updated upstream
+=======
+using TMPro;
+using Unity.VisualScripting;
+>>>>>>> Stashed changes
 using UnityEngine;
 
 public class LineDraw : MonoBehaviour
@@ -11,6 +16,10 @@ public class LineDraw : MonoBehaviour
     EdgeCollider2D edge;
     Vector3 touchPosition;
     List<Vector3> colliderPoints = new List<Vector3>();
+    
+
+    public TextMeshProUGUI scoreText;
+    //private int score = 0;
 
 
     void Start()
@@ -52,22 +61,27 @@ public class LineDraw : MonoBehaviour
     void addCollider()
     {
         List<Vector2> colliderPoints2 = new List<Vector2>();
-        for (int i = 0; i < colliderPoints.Count; i++)
-        {
+            for (int i = 0; i < colliderPoints.Count; i++)
+            {
 
-            colliderPoints2.Add(new Vector3(colliderPoints[i].x, colliderPoints[i].y, 0f));
+                colliderPoints2.Add(new Vector3(colliderPoints[i].x, colliderPoints[i].y, 0f));
             
-        }
+            }
 
-        for (int i = colliderPoints.Count - 1; i > 0; i--)
+      /*  for (int i = colliderPoints.Count - 1; i > 0; i--)
         {
             colliderPoints2.Add(new Vector3(colliderPoints[i].x, colliderPoints[i].y, 0f));
-        }
+        }*/
 
         edge = lineRenderer.gameObject.AddComponent<EdgeCollider2D>();
         edge.points = colliderPoints2.ToArray();
+<<<<<<< Updated upstream
 
 
+=======
+        //edge.isTrigger = true;
+        //CollisonCheck cCheck = new CollisonCheck();
+>>>>>>> Stashed changes
     }
 
 }
